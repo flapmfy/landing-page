@@ -8,6 +8,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
 .spacer {
   max-width: 1400px;
   padding: 0px 20px;
@@ -23,9 +28,14 @@ nav a {
   color: inherit;
 }
 
+button a {
+    color: inherit;
+    text-decoration: none;
+}
+
 header {
   color: white;
-  background-color: #1f2937;
+  background-color: #d22a36;
   width: 100%;
 }
 
@@ -37,6 +47,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .flex-container .logo {
@@ -61,12 +72,16 @@ nav {
   font-weight: bold;
 }
 
+nav li a:hover {
+    border-bottom: 2px solid #e5e7eb;
+}
+
 /**************************************************************/
 
 .hero-content .sign-in {
   margin-top: 8px;
   color: white;
-  background-color: #3882f6;
+  background-color: black;
 }
 
 .main-text {
@@ -117,8 +132,8 @@ nav {
 .info .profile-img {
   width: 150px;
   height: 150px;
-  border: 4px solid #3882f6;
-  border-radius: 15px;
+  outline: 5px solid #d22a36;
+  border-radius: 10px;
 }
 
 .info .flex-container {
@@ -137,6 +152,7 @@ nav {
 
 .info .description {
   text-align: center;
+  margin-top: 8px;
 }
 
 /**************************************************************/
@@ -162,7 +178,7 @@ nav {
 /**************************************************************/
 
 .action .flex-container {
-  background-color: #3882f6;
+  background-color: black;
   border-radius: 5px;
   padding: 50px 70px;
   margin: 100px 0px;
@@ -176,9 +192,9 @@ nav {
 }
 
 .action .flex-container .sign-in {
-  color: #f9faf8;
-  background-color: #3882f6;
-  border: #f9faf8 3px solid;
+  color: #e5e7eb;
+  background-color: black;
+  border: #e5e7eb 3px solid;
 }
 
 /**************************************************************/
