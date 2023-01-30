@@ -136,7 +136,7 @@ nav li a:hover {
 .info .profile-img {
   width: 150px;
   height: 150px;
-  outline: 5px solid black;
+  outline: 4px solid black;
   border-radius: 10px;
 }
 
@@ -171,10 +171,13 @@ nav li a:hover {
   color: #1f2937;
   font-weight: lighter;
   font-style: italic;
+  max-width: 900px;
+  margin: auto;
 }
 
-.quote-author {
+.quote-text .quote-author {
   text-align: end;
+  font-style: normal;
   font-weight: 900;
   font-size: 20px;
 }
