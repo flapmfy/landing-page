@@ -11,11 +11,7 @@ body {
 img {
     width: 100%;
     height: 100%;
-    border-radius: 7px;
-}
-
-header img {
-  width: 500px;
+    border-radius: 12px;
 }
 
 .spacer {
@@ -46,6 +42,10 @@ header {
 
 nav {
   padding: 10px 0px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(21, 21, 21, 98%);
 }
 
 .flex-container {
@@ -53,16 +53,17 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 5px
 }
 
 .flex-container .logo {
-  font-size: 24px;
+  font-size: 36px;
   color: #f9faf8;
   font-weight: 900;
 }
 
 .flex-container ul {
-  font-size: 18px;
+  font-size: 24px;
   color: #e5e7eb;
 
   display: flex;
@@ -78,51 +79,55 @@ nav {
 }
 
 nav li a:hover {
-    border-bottom: 2px solid #e5e7eb;
+    border-bottom: 2px solid #d22a36;
 }
 
 /**************************************************************/
 
 .hero-content .sign-in {
-  margin-top: 8px;
+  font-size: 22px;
   color: white;
   background-color: black;
 }
 
 .main-text {
-  font-size: 48px;
+  font-size: 58px;
   font-weight: bold;
   color: #f9faf8;
+  margin-bottom: 8px;
 }
 
 .secondary-text {
-  font-size: 18px;
+  font-size: 28px;
   color: #e5e7eb;
+  margin-bottom: 8px;
 }
 
 .hero .flex-container {
-  gap: 25px;
+  gap: 40px
 }
 
-.hero .flex-container > div {
+.hero .flex-container .hero-content {
   flex: 1;
 }
 
-.hero .placeholder {
-  align-self: stretch;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero {
+  padding-top: 149px;
 }
 
 .hero {
-  padding: 100px 0px;
+  padding-bottom: 100px;
+}
+
+.hero img {
+  max-width: 650px;
+  margin: auto;
 }
 
 /**************************************************************/
 
 .info {
-  padding-bottom: 100px;
+  padding: 65px 0px;
 }
 
 .info .heading {
@@ -130,14 +135,13 @@ nav li a:hover {
   font-size: 36px;
   font-weight: bold;
   color: #1f2937;
-  margin-top: 25px;
 }
 
 .info .profile-img {
   width: 150px;
   height: 150px;
   outline: 4px solid black;
-  border-radius: 10px;
+  border-radius: 13px;
 }
 
 .info .flex-container {
@@ -186,22 +190,26 @@ nav li a:hover {
 
 .action .flex-container {
   background-color: black;
-  border-radius: 5px;
-  padding: 50px 70px;
+  border-radius: 8px;
+  padding: 45px 60px;
   margin: 100px 0px;
   justify-content: space-around;
 }
 
 .sign-info h3 {
-  font-size: 24px;
+  font-size: 28px;
   color: #f9faf8;
   font-weight: bold;
 }
 
+.action .secondary-text {
+  font-size: 23px;
+}
 .action .flex-container .sign-in {
   color: #e5e7eb;
   background-color: black;
   border: #e5e7eb 3px solid;
+  font-size: 20px;
 }
 
 /**************************************************************/
