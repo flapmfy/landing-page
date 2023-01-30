@@ -132,7 +132,7 @@ nav li a:hover {
 .info .profile-img {
   width: 150px;
   height: 150px;
-  outline: 5px solid #d22a36;
+  outline: 5px solid black;
   border-radius: 10px;
 }
 
