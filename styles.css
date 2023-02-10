@@ -41,7 +41,8 @@ header {
 }
 
 nav {
-  padding: 10px 0px;
+  padding: 5px 0px;
+  border-bottom: 1px solid rgba(99, 99, 99, 0.98);
   width: 100%;
   position: fixed;
   top: 0;
@@ -62,11 +63,16 @@ nav {
   font-weight: 900;
 }
 
+.flex-container .logo:hover {
+  color:#d22a36;
+}
+
 .flex-container ul {
   font-size: 24px;
   color: #e5e7eb;
 
   display: flex;
+  align-items: stretch;
   gap: 18px;
 }
 
@@ -78,8 +84,19 @@ nav {
   font-weight: bold;
 }
 
-nav li a:hover {
-    border-bottom: 2px solid #d22a36;
+nav li {
+  border-bottom: 3px solid rgb(21, 21, 21, 98%);
+  border-radius: 2px;
+  padding: 18px 0px 15px 0px;
+}
+
+nav li:hover {
+  border-bottom: 3px solid #d22a36;
+}
+
+nav li a{
+  display: flex;
+  align-self: center;
 }
 
 /**************************************************************/
@@ -88,6 +105,16 @@ nav li a:hover {
   font-size: 22px;
   color: white;
   background-color: black;
+}
+
+.hero-content a {
+  text-decoration: none;
+}
+
+.hero-content .sign-in:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
 }
 
 .main-text {
@@ -138,13 +165,14 @@ nav li a:hover {
 }
 
 .info .profile-img {
-  width: 150px;
-  height: 150px;
+  
+  width: 100%;
   outline: 4px solid black;
   border-radius: 13px;
 }
 
 .info .flex-container {
+  min-height: 300px;
   margin-top: 25px;
   justify-content: center;
   gap: 50px;
@@ -155,7 +183,11 @@ nav li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 150px;
+  width: 175px;
+}
+
+.info .flex-item:hover {
+  width: 230px;
 }
 
 .info .description {
@@ -196,6 +228,10 @@ nav li a:hover {
   justify-content: space-around;
 }
 
+.action a {
+  text-decoration: none;
+}
+
 .sign-info h3 {
   font-size: 28px;
   color: #f9faf8;
@@ -205,11 +241,17 @@ nav li a:hover {
 .action .secondary-text {
   font-size: 23px;
 }
+
 .action .flex-container .sign-in {
   color: #e5e7eb;
   background-color: black;
   border: #e5e7eb 3px solid;
   font-size: 20px;
+}
+
+.action .flex-container .sign-in:hover {
+  background-color: #e5e7eb;
+  color: black;
 }
 
 /**************************************************************/
